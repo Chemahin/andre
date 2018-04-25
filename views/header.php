@@ -8,17 +8,6 @@
     <link href="<?= URL ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= URL ?>/assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= URL ?>/assets/css/font-awesome.min.css">
-   <script>
-   	function setSize()
-		{
-			var userWindHeight = window.innerHeight;
-			var elem = document.getElementsByClassName('main-div')[0];
-			// elem[0].style.height="100px";
-			console.log(elem);
-		}
-		setSize();
-
-			
-   </script>
+   
 </head>
 <body>
