@@ -37,20 +37,20 @@
 
 <script type="text/javascript">
 
-function setCookie(name, val, m){
-	if(m!=0)
-		{
-			var d=new Date(); 
-				d.setMonth(d.getMonth()+m);
-				document.cookie=name+"="+escape(val)+"; expires="+d.toUTCString()+";"
+	function setCookie(name, val, m){
+		if(m!=0)
+			{
+				var d=new Date(); 
+					d.setMonth(d.getMonth()+m);
+					document.cookie=name+"="+escape(val)+"; expires="+d.toUTCString()+";"
+				}
+		else 
+			{
+				document.cookie=name+"="+escape(val)+";"
 			}
-	else 
-		{
-			document.cookie=name+"="+escape(val)+";"
 		}
-	}
-	
-	
+		
+		
 	
 	function getCookie(name){
 		var end="";
@@ -92,7 +92,6 @@ if($path=="home/main"):
 	var userWindHeight = window.innerHeight;
 	var elemMenu = document.getElementsByClassName('menu-block')[0];
 	elemMenu.style.height=userWindHeight+"px";
-	elemMenu.style.top= -userWindHeight+"px";
 
 	if(getCookie('andre')=='' && getCookie('side')==''){
 		setCookie('andre', 1, 10)

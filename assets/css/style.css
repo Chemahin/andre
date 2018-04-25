@@ -14,9 +14,9 @@ a:focus-within{
 	text-decoration: none;
 }
 .menu-block{
-	position: relative;
+	position: fixed;
+	top: 0;
 	background: rgb(0, 0, 0);
-
 	width: 20vw;
     min-width: 370px;
     
@@ -24,14 +24,13 @@ a:focus-within{
     
 }
 .marginCenter{
-	position: relative;
 	margin: 0px 40vw;
 	background: rgba(0, 0, 0, 0.90);
 }
 .marginLeft{
 	margin:  0px 0vw;
 	background: rgb(0, 0, 0);
-	position: fixed;
+	
 }
 
 header{
@@ -189,17 +188,93 @@ footer{
 /* Block "CONTACT.php"*/
 /* ------------------------------------------------------------------------- */
 .main-contact{
-	width: 100%;
+	width: 79vw;
 	height: 900px;
 	margin-left: 20vw;
-	background-color: red;
-	background-repeat: no-repeat;
-	-webkit-background-size:cover;
-	background-size: cover;
 }
+.wrap-flex{
+	width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 35px 0px;
+
+}
+.contact{
+	
+    padding: 3%;
+     /*-webkit-filter: blur(5px);
+     -moz-filter: blur(5px);
+       -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+          filter: blur(5px);*/
+
+       /*   background: rgba(0,0,0,.6);
+    backdrop-filter: grayscale(1) contrast(3) blur(1px);*/
+}
+.contact>hr{
+	color: red;
+}
+.contact>h1{
+	font-size: 50px;
+
+}
+.contact>p{
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.contact>p span{
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+	padding-left: 50px;
+	
+
+}
+.andre-img{
+	width: 33%;
+	max-width: 485px;
+    max-height: 485px;
+    text-align: center;
+    border: 12px solid #000000b3;
+    border-radius: 70%;
+    background: #ffffffcf;
+    overflow: hidden;
+}
+/*.top{
+	<img src="<?= #URL.'/images/'.$data[0]['imageFace'] ?>" alt="" class="andre">
+	    width: 50%;
+    height: 672px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+	justify-content: space-around;
+	
+}*/
+.andre{
+	width: 57%;
+}
+.map{
+	width: 100%;
+	padding: 20px;
+}
+.map>iframe{
+	width: 100%;
+}
+/*.top-img{
+	width: 20%;
+	height: 10%;
+	-webkit-shape-outside: polygon(0% 4%, 96% 19%, 100% 100%, 29% 100%);
+  shape-outside: polygon(0% 4%, 96% 19%, 100% 100%, 29% 100%);
+}*/
 
 
-
-
+/*-webkit-clip-path: polygon(0 0, 100% 14%, 100% 100%, 30% 100%);
+  -webkit-shape-margin: 20px;
+*/
 
 /* ------------------------------------------------------------------------- */
