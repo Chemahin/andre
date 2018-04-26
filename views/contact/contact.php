@@ -1,5 +1,5 @@
 <div class="main-contact">
-	<div class="wrap-img"></div>
+	<div class="wrap-img" style="background-image: url(<?= URL.'/images/addressDownloadFon.jpg'?>)"></div>
 	<div class="wrap-fon"></div>
 	<div class="wrap-flex" style="background-image: url(<?= URL.'/images/addressFon.jpg'?>)">
 		<div class="contact">
@@ -27,7 +27,57 @@
 </div>
 
 <script type="text/javascript">
+	var wrapImg = document.getElementsByClassName('wrap-img')[0];
+	var wrapFon = document.getElementsByClassName('wrap-fon')[0];
+	var userWindHeight = window.innerHeight;
+	var elemBody = document.getElementsByTagName('body')[0];
+	elemBody.style.overflow="hidden";
+	wrapImg.style.height=userWindHeight+"px";
+	wrapFon.style.height=userWindHeight+"px";
+
+function getCookie(name){
+		var end="";
+		var cook=document.cookie;// Login=Petya; pass=5678; color=333
+
+		var reg=new RegExp("\\b"+name+"=", "g");
+		if(reg.test(cook)==false)
+			{return end;}
+		else
+			{
+				var pos=cook.search(reg);//позиция имени(pass= или color=)
+				var pos2=cook.indexOf("=", pos);//позиция равно, кот. идет после позиции имени(pass= или color=)
+				var pos3=cook.indexOf(";", pos);//позиция ;, кот. идет после позиции имени(pass= или color=)
+				if(pos3==-1)
+				{
+					return unescape(cook.slice(pos2+1))
+					}
+				else
+				{
+					return unescape(cook.slice(pos2+1, pos3))
+					}
+			}
+		}
+
+	
 	
 
+if(getCookie('side')==1 && getCookie('andre')==1)
+	{
+		fon();
+	}
+else{
+	if(getCookie('andre')==1 && getCookie('side')==0){
+		setTimeout(fon, 4000);
+	}
+}
 
+
+	function fon() 
+	{
+		wrapImg.classList.remove('wrap-img');
+		wrapFon.classList.remove('wrap-fon');
+		wrapImg.classList.add('none-fon');
+		wrapFon.classList.add('none-fon');
+
+	}
 </script>

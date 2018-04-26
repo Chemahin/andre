@@ -187,10 +187,29 @@ footer{
 
 /* Block "CONTACT.php"*/
 /* ------------------------------------------------------------------------- */
+
+.wrap-img{
+	width: 130%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: -20vw;
+}
+.wrap-fon{
+	width: 130%;
+    margin-left: -20vw;
+    background-color: #ffffffc2;
+    position: absolute;
+    top: 0;
+}
+.none-fon{
+	display: none;
+}
 .main-contact{
 	width: 79vw;
 	height: 900px;
 	margin-left: 20vw;
+	 
 }
 .wrap-flex{
 	width: 100%;
@@ -236,7 +255,7 @@ footer{
 
 }
 .andre-img{
-	width: 33%;
+	width: 60%;
 	max-width: 485px;
     max-height: 485px;
     text-align: center;
