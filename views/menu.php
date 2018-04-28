@@ -89,24 +89,24 @@ if($path=="home/main"):
 
 <script type="text/javascript">
 	
-	var userWindHeight = window.innerHeight;
+	// var userWindHeight = window.innerHeight;
 	var elemMenu = document.getElementsByClassName('menu-block')[0];
-	elemMenu.style.height=userWindHeight+"px";
+	// elemMenu.style.height=userWindHeight+"px";
 
 	if(getCookie('andre')=='' && getCookie('side')==''){
-		setCookie('andre', 1, 10)
-		setCookie('side', 0, 10)
+		setCookie('andre', 1, 0)
+		setCookie('side', 0, 0)
 		elemMenu.classList.add('marginCenter');
 	}
 	else{
 		if(getCookie('side')==0){
-			setCookie('andre', 1, 10)
-			setCookie('side', 0, 10)
+			setCookie('andre', 1, 0)
+			setCookie('side', 0, 0)
 			elemMenu.classList.add('marginCenter');
 		}
 		else{
-			setCookie('andre', 1, 10)
-			setCookie('side', 0, 10)
+			setCookie('andre', 1, 0)
+			setCookie('side', 0, 0)
 			setTimeout(function(){
 				elemMenu.classList.add('moveCenter');
 				
@@ -129,10 +129,10 @@ if($path=="home/main"):
 
 <script type="text/javascript">
 	
-	var userWindHeight = window.innerHeight;
+	// var userWindHeight = window.innerHeight;
 	var elemMenu = document.getElementsByClassName('menu-block')[0];
-	elemMenu.style.height=userWindHeight+"px";
-	elemMenu.style.top= "0px";	
+	// elemMenu.style.height=userWindHeight+"px";
+	// elemMenu.style.top= "0px";	
 
 	if(getCookie('andre')=='' && getCookie('side')==''){
 		setCookie('andre', 1, 10)

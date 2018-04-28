@@ -8,6 +8,8 @@
     <link href="<?= URL ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= URL ?>/assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= URL ?>/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?= URL ?>/assets/css/animate.css">
+
    
 </head>
 <body>
