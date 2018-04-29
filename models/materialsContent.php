@@ -5,8 +5,8 @@
 	{
 		static function index()
 		{
-			$res = 'hello mat';
-			return $res;
+			$res = self::$pdo->query('SELECT * FROM materials');
+			return $res->fetchAll(PDO::FETCH_ASSOC);
 		}
 
 	}

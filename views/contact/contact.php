@@ -22,7 +22,6 @@
 			</div>
 		</div>
 		<div class="andre-img">
-			<img src="<?= URL.'/images/addressDownloadFon.jpg' ?>" alt="" class="andre-fon">
 			<img src="<?= URL.'/images/'.$data[0]['imageFace'] ?>" alt="" class="andre">
 		</div>
 

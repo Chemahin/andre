@@ -185,9 +185,10 @@ footer{
 	 
 }
 .wrap-flex{
-	width: 100%;
+    width: 100%;
+    padding-left: 20vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -195,16 +196,14 @@ footer{
 .non-flex{
 	display: none;
 }
-.contact{
-	margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 10%;
+.contact {
+    width: 75%;
     padding: 5%;
     padding-top: 2%;
     padding-bottom: 0px;
-    background-color: #ffffff63;
-        border-radius: 5%;
-    box-shadow: 25px 40px 30px #000000d9;
+    background-color: #ffffff;
+    box-shadow: 25px 40px 30px #0000007a;
+}
      /*-webkit-filter: blur(5px);
      -moz-filter: blur(5px);
        -o-filter: blur(5px);
@@ -213,7 +212,7 @@ footer{
 
        /*   background: rgba(0,0,0,.6);
     backdrop-filter: grayscale(1) contrast(3) blur(1px);*/
-}
+
 .contact>hr{
 	margin-top: 16px;
     margin-bottom: 3%;
@@ -247,22 +246,15 @@ footer{
 
 }
 .andre-img{
-	width: 25%;
+    width: 40%;
     height: 100vh;
     text-align: center;
-    background: #ffffff6b;;
+    background: #ffffff69;
     overflow: hidden;
     padding-top: 10%;
     position: relative;
 }
-.andre-fon{
-	width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.2;
-}
+
 /*.top{
 	<img src="<?= #URL.'/images/'.$data[0]['imageFace'] ?>" alt="" class="andre">
 	    width: 50%;
@@ -304,6 +296,102 @@ footer{
 */
 
 /* ------------------------------------------------------------------------- */
+
+/* Block "MATERIAL.php"*/
+/* ------------------------------------------------------------------------- */
+
+
+.main-material{
+	width: 100%;
+	height: 3000px;
+	padding-top: 2%;
+	/*background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;*/
+}
+.wrap{
+	width: 100%;
+    padding-left: 20vw;
+    display: flex;
+    justify-content: center;
+}
+.material-item{
+	justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
+}
+.item-image{
+	width: 50%;
+	height: auto;
+	min-height: 500px;
+	    margin-right: -12%;
+	background-color: white;
+	border: 1px solid black;
+	background-size: 100%;
+	display: flex;
+	align-items: flex-end;
+	
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  
+}
+.image-text{
+	width: 85%;
+    padding: 2% 5%;
+    color: white;
+    font-size: 15px;
+    background-color: #000000cc;
+}
+.item-text{
+	width: 50%;
+	height: auto;
+	background-color: white;
+	border: 1px solid black;
+	display: flex;
+	justify-content: flex-end;
+	-webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.image-text>p{
+	padding-right: 5%;
+}
+.text-wrap{
+	width: 75%;
+	padding: 2% 4%;
+	position: relative;
+}
+.text-wrap>h1{
+	text-align: center;
+}
+.text-wrap>p{
+	text-align: justify; 
+}
+.itemText-img{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+.img{
+	overflow: hidden;
+    width: 22%;
+    height: 81px;
+}
+.img>img{
+	cursor:pointer;
+	width: 100%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.img>img:hover{
+	 -webkit-transform: scale(1.2);
+ -moz-transform: scale(1.2);
+ -o-transform: scale(1.2);
+}
+
+
+
 /*---------MEDIA-----------*/
 @media screen and (max-height: 900px) {
 	.logo{

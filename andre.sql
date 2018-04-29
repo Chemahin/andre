@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 13 2018 г., 17:49
+-- Время создания: Апр 29 2018 г., 23:01
 -- Версия сервера: 5.5.50
 -- Версия PHP: 5.6.23
 
@@ -46,7 +46,37 @@ CREATE TABLE IF NOT EXISTS `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `phone1`, `phone2`, `phone3`, `address`, `email`, `social1`, `social2`, `social3`, `imageFace`, `imageText`, `imageMain`) VALUES
-(1, '0666666666', '0977777777', '0633333333', 'Запорожье', 'ww@gmail.com', 'fb.com', NULL, NULL, NULL, 'Andre', 'main.jpg');
+(1, '066-666-66-66', '097-777-77-77', '0633333333', 'Запорожье, ул. Железнодорожная 3', 'ww@gmail.com', 'fb.com', NULL, NULL, 'andre.png', 'Andre', 'main4.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `materials`
+--
+
+CREATE TABLE IF NOT EXISTS `materials` (
+  `id` int(11) NOT NULL,
+  `publish` int(11) NOT NULL,
+  `zagolovok` varchar(50) DEFAULT NULL,
+  `mainText` varchar(600) DEFAULT NULL,
+  `imagesPathMain` varchar(50) DEFAULT NULL,
+  `imagesTextMain` varchar(100) DEFAULT NULL,
+  `imagesPathSide1` varchar(50) DEFAULT NULL,
+  `imagesPathSide2` varchar(50) DEFAULT NULL,
+  `imagesPathSide3` varchar(50) DEFAULT NULL,
+  `imagesPathSide4` varchar(50) DEFAULT NULL,
+  `imagesTextSide1` varchar(150) DEFAULT NULL,
+  `imagesTextSide2` varchar(150) DEFAULT NULL,
+  `imagesTextSide3` varchar(150) DEFAULT NULL,
+  `imagesTextSide4` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Дамп данных таблицы `materials`
+--
+
+INSERT INTO `materials` (`id`, `publish`, `zagolovok`, `mainText`, `imagesPathMain`, `imagesTextMain`, `imagesPathSide1`, `imagesPathSide2`, `imagesPathSide3`, `imagesPathSide4`, `imagesTextSide1`, `imagesTextSide2`, `imagesTextSide3`, `imagesTextSide4`) VALUES
+(1, 0, 'Velluto', 'Очень крутая техника, такое чквство что сам ангел наносил это жижало на стену своей корявенькой рученкой. Смотря на стену, Ваши глаза будут кровоточить святой радугой прямо на выших соседей.Ура Ура Ура. Да восславится мастер, который нанес это волшибство на стену. Стена станет единтсенной достопримечательностью в Вашей блеклой жизни. Всего хорошего. Андрей Гаврилов. Мастер декоративной штукатурки!)', 'vellutoFon.png', 'Это невероятное нечно привнесет мазок радости и счастья в Ваши серые будни.', 'vellutoFonSide1.png', 'vellutoFonSide2.png', 'vellutoFonSide3.png', 'vellutoFonSide4.png', 'Это следующее(1) невероятное нечно привнесет мазок', 'Это следующее(2) невероятное нечно привнесет мазок', 'Это следующее(3) невероятное нечно привнесет мазок', 'Это следующее(4) невероятное нечно привнесет мазок');
 
 --
 -- Индексы сохранённых таблиц
@@ -59,6 +89,12 @@ ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `materials`
+--
+ALTER TABLE `materials`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -66,6 +102,11 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT для таблицы `contacts`
 --
 ALTER TABLE `contacts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT для таблицы `materials`
+--
+ALTER TABLE `materials`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
