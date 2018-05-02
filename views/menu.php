@@ -12,7 +12,7 @@
 				<ul>
 					<li><a href="<?= URL?>" class="<?php echo ($path=="home/main")?'active':'' ; ?>">Главная</a></li>
 					<li><a href="<?= URL?>/material" class="<?php echo ($path=="materials/materials")?'active':'' ; ?>">Виды нанесения</a></li>
-					<li><a href="#">Галерея</a></li>
+					<li><a href="<?= URL?>/gallery" class="<?php echo ($path=="gallery/gallery")?'active':'' ; ?>">Галерея</a></li>
 					<li><a href="#">Оставить коментарий</a></li>
 					<li><a href="<?= URL?>/contact" class="<?php echo ($path=="contact/contact")?'active':'' ; ?>">Контакты</a></li>
 				</ul>

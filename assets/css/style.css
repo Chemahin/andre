@@ -7,7 +7,7 @@ body{
 	box-sizing: border-box;
 	
 }
-/* Block "MAIN.php"  + block "MENU.php" */
+/* Block "MAIN.php"  + block "MENU.php"      main color #890F33 */ 
 /* ------------------------------------------------------------------------- */
 a:focus-within{
 	color: white;
@@ -26,9 +26,7 @@ a:focus-within{
 	
 }
 .marginLeft{
-	margin:  0px 0vw;
-	
-	
+	margin:  0px 0vw;	
 }
 
 header{
@@ -70,7 +68,7 @@ nav li>a{
 	    font-size: 18px;
 	    padding: 11px 60px;
 	    
-}/*, .active>a*/
+}
 .active{
 	background-color: red;
 	padding: 12px 20%;
@@ -204,14 +202,7 @@ footer{
     background-color: #ffffff;
     box-shadow: 25px 40px 30px #0000007a;
 }
-     /*-webkit-filter: blur(5px);
-     -moz-filter: blur(5px);
-       -o-filter: blur(5px);
-      -ms-filter: blur(5px);
-          filter: blur(5px);*/
 
-       /*   background: rgba(0,0,0,.6);
-    backdrop-filter: grayscale(1) contrast(3) blur(1px);*/
 
 .contact>hr{
 	margin-top: 16px;
@@ -255,16 +246,7 @@ footer{
     position: relative;
 }
 
-/*.top{
-	<img src="<?= #URL.'/images/'.$data[0]['imageFace'] ?>" alt="" class="andre">
-	    width: 50%;
-    height: 672px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-	justify-content: space-around;
-	
-}*/
+
 .andre{
 	    width: 100%;
     position: absolute;
@@ -283,17 +265,7 @@ footer{
 .contact-social>a:hover{
 	color: blue;
 }
-/*.top-img{
-	width: 20%;
-	height: 10%;
-	-webkit-shape-outside: polygon(0% 4%, 96% 19%, 100% 100%, 29% 100%);
-  shape-outside: polygon(0% 4%, 96% 19%, 100% 100%, 29% 100%);
-}*/
 
-
-/*-webkit-clip-path: polygon(0 0, 100% 14%, 100% 100%, 30% 100%);
-  -webkit-shape-margin: 20px;
-*/
 
 /* ------------------------------------------------------------------------- */
 
@@ -391,6 +363,15 @@ footer{
 }
 
 
+/* ------------------------------------------------------------------------- */
+
+/* Block "GALLERY.php"*/
+/* ------------------------------------------------------------------------- */
+
+.galley-wrap{
+	width: 100%;
+    padding-left: 20vw;
+}
 
 /*---------MEDIA-----------*/
 @media screen and (max-height: 900px) {
