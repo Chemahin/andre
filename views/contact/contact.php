@@ -1,24 +1,24 @@
-<div class="main-contact" style="background-image: url(<?= URL.'/images/main.jpg' ?>)">
+<div class="main-contact" style="background-image: url(<?= URL.'/images/mainContact.jpg' ?>)">
 	
 	<div class="non-flex" >
 		<div class="contact">
-			<h1>Контактная информация:</h1> <hr>
-			<p>Телефон: </p>
-				<span><?= $data[0]['phone1']?></span> <br> 
-				<span><?= $data[0]['phone2']?></span>	
+			<p><i class="fa fa-phone-square" aria-hidden="true"></i></p> <br>
+				<span><?= $data[0]['phone1']?></span>  
+				<span><?= $data[0]['phone2']?></span>	<br>
 			
-			<p>Email: </p>
-				<span><?= $data[0]['email']?></span> 
+			<p><i class="fa fa-envelope-o" aria-hidden="true"></i></p> <br>
+				<span><?= $data[0]['email']?></span> <br>
 			
-			<p>Адрес: </p> 
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i></p>  <br>
 				<span><?= $data[0]['address']?></span> 
+			<br>
 			
-			<hr>
 
-			<div class="contact-social">
-				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<div class="contact-map">
+				<!-- <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
 				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.638714870925!2d35.17196747858978!3d47.82721840740205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7a07ef5b0ecd2d0!2z0KTQkNCg0JHQmNCvLCDQnNCQ0JPQkNCX0JjQnQ!5e0!3m2!1sru!2sua!4v1525448631457" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="andre-img">

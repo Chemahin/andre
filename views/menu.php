@@ -3,7 +3,8 @@
 
 	<div  class="menu-block" >
 		<header>
-			<img src="<?= URL?>/images/logo2.png" alt="" class="logo">
+			<a href="<?= URL?>"><img src="<?= URL?>/images/logo2.png" alt="" class="logo"></a>
+					
 			<h1>Андрей Гаврилов</h1>
 			<h2>мастер декоративной штукатурки</h2>
 			<img src="<?= URL?>/images/candelabr.png" alt="" class="ckandelabr">

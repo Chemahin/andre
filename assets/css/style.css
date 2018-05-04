@@ -1,5 +1,6 @@
 html, body{
 	min-height: 100%;
+	font-size: 16px;
 }
 body{
 	margin: 0;
@@ -7,7 +8,7 @@ body{
 	box-sizing: border-box;
 	
 }
-/* Block "MAIN.php"  + block "MENU.php"      main color #890F33 */ 
+/* Block "MAIN.php"  + block "MENU.php"      main color #ff1818 */ 
 /* ------------------------------------------------------------------------- */
 a:focus-within{
 	color: white;
@@ -18,8 +19,8 @@ a:focus-within{
 	top: 0;
 	background: rgba(0, 0, 0, 0.9);
 	width: 20vw;
-	height: 100vh;
-    min-width: 370px;
+	height: 100vh;;
+   /* min-width: 330px;*/
 }
 .marginCenter{
 	margin: 0px 40vw;
@@ -31,6 +32,7 @@ a:focus-within{
 
 header{
 	text-align: center;
+	height: 80vh;
 }
 header>img{
 	width: 100%;
@@ -54,38 +56,35 @@ header h2{
     border-radius: 50%;
     
 }
+nav{
+	height: 28vh;
+}
 nav ul{
 	padding: 0px;
 }
 nav li{
 	list-style-type: none;
-    padding: 10px 0px;
+    padding: 2px 0px;
     background-color: transparent;
-    
+    width: 65%;
+    margin: 0 auto;
 }
 nav li>a{
+		display: block;
 	    color: white;
 	    font-size: 18px;
-	    padding: 11px 60px;
-	    
+	    width: 100%;
+	    padding: 10px 0;
 }
-.active{
+.active, nav li>a:hover{
 	background-color: red;
-	padding: 12px 20%;
 }
 nav li>a:hover{
 	text-decoration: none;
-	color: black;
-	font-size: 18px;
-	background-color: red;
 	color: white;
 
 }
-nav li:hover{
-	width: 100%;
-	background-color: red;
-	
-}
+
 .ckandelabr{
 	width: 60%;
     margin: 30px 0;
@@ -98,6 +97,7 @@ footer{
 	margin: 0 20px;
 	color: white;
 	padding-bottom: 30px;
+	height: 20vh;
 }
 .phone{
 	display: flex;
@@ -130,8 +130,7 @@ footer{
     border-radius: 50%;
 }
 .social a:hover{
-	border: 5px solid red;
-	color: black;
+	
 	background: white;
 }
 
@@ -197,42 +196,23 @@ footer{
 .contact {
     width: 75%;
     padding: 5%;
-    padding-top: 2%;
-    padding-bottom: 0px;
-    background-color: #ffffff;
-    box-shadow: 25px 40px 30px #0000007a;
+    padding-top: 0%;
+    background: #69696924;
 }
 
-
-.contact>hr{
-	margin-top: 16px;
-    margin-bottom: 3%;
-    border: 0;
-    border-top: 3px solid #000b98;
-    width: 50%;
-}
-.contact>h1{
-	font-size: 35px;
-    color: #003446;
-    padding: 5px 10px;
-    background: #0a0a0a0a;
-    border-radius: 10px;
-    margin: 10px;
-
-}
 .contact>p{
-	    font-size: 25px;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 5px;
-    margin-top: 30px;
+	display: inline-block;
+    margin-top: 5%;
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 5px 6px 15px black;
 }
 .contact> span{
-	font-size: 23px;
-	color: #f15959;
+	font-size: 1.4em;
+	color: white;
 	font-weight: bold;
-	padding-left: 5%;
-	padding-bottom: 20px;
+	padding-left: 10%;
+
 	
 
 }
@@ -240,7 +220,7 @@ footer{
     width: 40%;
     height: 100vh;
     text-align: center;
-    background: #ffffff69;
+    background: #69696924;
     overflow: hidden;
     padding-top: 10%;
     position: relative;
@@ -253,19 +233,16 @@ footer{
     left: 0;
     opacity: 0.98;
 }
-.contact-social{
-	display: flex;
-	justify-content: space-around;
-	    font-size: 50px;
-    padding: 7%;
-}
-.contact-social>a{
-	color: red;
-}
-.contact-social>a:hover{
-	color: blue;
+.contact-map{
+	margin-top: 10%;
 }
 
+.contact-map>iframe{
+	opacity: 0.4;
+}
+.contact-map>iframe:hover{
+	opacity: 0.8;
+}
 
 /* ------------------------------------------------------------------------- */
 
@@ -369,10 +346,61 @@ footer{
 /* ------------------------------------------------------------------------- */
 
 .galley-wrap{
-	width: 100%;
+	width: 100vw;
     padding-left: 20vw;
 }
+/* ------------------------------------------------------------------------- */
 
+
+/* Block "ADMIN.php"*/
+/* ------------------------------------------------------------------------- */
+
+.admin{
+	background-color: #4555ff;
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+.admin li{
+	
+}
+
+.nav-admin ul{
+	padding: 0px;
+}
+.nav-admin li{
+	list-style-type: none;
+    width: 100%;
+}
+.nav-admin li>a{
+	display: block;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    padding: 10px;
+}
+.active-admin, .nav-admin li>a:hover{
+	background-color: #17177b;
+}
+.nav-admin li>a:hover{
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+
+}
+.panel-admin{
+	text-align: center;
+    padding: 5% 0;
+    font-size: 1.3em;
+    color: black;
+    background-color: #d2d2d2;
+}
+.wrap-admin{
+	    width: 60vw;
+    padding-left: 20vw;
+}
+/* ------------------------------------------------------------------------- */
 /*---------MEDIA-----------*/
 @media screen and (max-height: 900px) {
 	.logo{
